@@ -8,7 +8,6 @@ import Designs from "./Designs"
 const App = () => {
   return (
     <>
-    
    <div className ="site-wrapper">
    <header className="shared-header">
       <section className="container-shared-header">
@@ -35,6 +34,16 @@ const App = () => {
         <Route path = "animations" element = {<Animations />} />
         <Route path = "designs" element = {<Designs />} />
     </Routes>
+    <footer className="shared-footer">
+      <p>
+          <a href="jordanw0412@gmail.com">Contact</a>
+      </p>    
+      <p>
+          <img src="./Site_Files/copyright_symbol_3.png"></img>
+          All Rights Reserved
+      </p>    
+    </footer>
+
    </div>
    </>
    
