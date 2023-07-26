@@ -1,5 +1,5 @@
 import "./styles.css"
-import Home from './Home-Page'
+import Home from './Home'
 import About from "./About"
 import { Link, Route, Routes } from "react-router-dom"
 import Animations from "./Animations"

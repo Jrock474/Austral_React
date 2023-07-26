@@ -1,3 +1,5 @@
+import "./Home-Header.css"
+
 const Home = () => {
     return(
        <> 
