@@ -1,3 +1,4 @@
+import React, {useState, useEffect} from "react"
 import "./styles.css"
 import Home from './Home'
 import About from "./About"
@@ -6,11 +7,21 @@ import Animations from "./Animations"
 import Designs from "./Designs"
 
 const App = () => {
+const [headerColor, setHeaderColor] = useState("")
+  const testFunc = () => {
+    if(window.location.href === "url here"){
+      setHeaderColor('blue')
+    }
+  }
+  useEffect(()=>{
+    testFunc()
+  }, [])
+  
   return (
     <>
    <div className ="site-wrapper">
    <header className="shared-header">
-      <section className="container-shared-header">
+      <section className="container-shared-header" id={headerColor}>
           <a href ="#" className = "toggle-button">
               <span className ="bar"></span>
               <span className ="bar"></span>
