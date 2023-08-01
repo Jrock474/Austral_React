@@ -1,8 +1,13 @@
-import { Link} from "react-router-dom"
+import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ color }) => {
+  useEffect(() => {
+    // Update the background color when the color prop changes
+    document.querySelector('.shared-header').style.backgroundColor = color;
+  }, [color]);
     return(
-        <header className="shared-header">
+        <header className="shared-header" style={{backgroundColor:color}}>
         <section className="container-shared-header">
             <a href ="#" className = "toggle-button">
                 <span className ="bar"></span>
